@@ -9,6 +9,8 @@ public class main {
         newlinkedlist.insert(50);
 //        newlinkedlist.display();
         newlinkedlist.printspecificvalue(2);
+        newlinkedlist.delete(30);
+        newlinkedlist.display();
 
 
     }
