@@ -78,4 +78,27 @@ public class linkedlist {
         }
     }
 
+    public  void insertspecificvalue(int index,int value){
+
+        node newNode=new node(value);
+        if(index==0){
+            newNode.next=head;
+            head=newNode;
+        }
+
+        node current=head;
+        int count=0;
+        while(current!=null && count<index-1){
+            current=current.next;
+            count++;
+        }
+        if(current==null){
+            System.out.println("index out of range");
+        }
+        else{
+            newNode.next=current.next;
+            current.next=newNode;
+        }
+    }
+
 }
