@@ -15,7 +15,7 @@ public class linkedlist {
         }
 
         node current=head;
-        while (head.next != null) {
+        while (current.next != null) {
             current=current.next;
 
         }
@@ -23,4 +23,13 @@ public class linkedlist {
 
 
     }
+
+    public void display(){
+        node current=head;
+        while(current!=null){
+            System.out.println(current.data);
+            current=current.next;
+        }
+    }
+
 }

@@ -7,5 +7,8 @@ public class main {
         newlinkedlist.insert(30);
         newlinkedlist.insert(40);
         newlinkedlist.insert(50);
+        newlinkedlist.display();
+
+
     }
 }
